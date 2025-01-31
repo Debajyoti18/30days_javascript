@@ -117,3 +117,9 @@ const sym2 = Symbol.for('123')
 
 // // BigInt (added in ES2020)
 // typeof 42n;          // "bigint"
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+// MEMORY ------ STACK(PRIMITIVE)-COPY HEAP(NONPRIMITIVE)-REFERENCE
+// reference - any changes to the references shows in original 
+
+
+
