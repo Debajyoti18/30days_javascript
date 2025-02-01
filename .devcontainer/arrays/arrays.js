@@ -85,5 +85,33 @@ console.log(spreadarr)//[
 //     'baby'
 //   ]
 
+//>>>>>>>>>>>>>>>>>>>>>>>Flat array >>>>>>>>>>>>>>>>>>>>>>>>>
+const a1 = [1,2,3,[2,3,4],[3,4,5,[3,4]]];
+const a12= a1.flat(Infinity);//Returns a new array with all sub-array elements concatenated
+//  into it recursively up to the specified depth.and infinity means all make to one array
+console.log(a12);
+
+//>>>>>>>>>>> Arrays queries>>>>>>>>>>>>>
+console.log(Array.isArray("dEBAJYOTI"))//STRING IS NOT AN ARRAY
+console.log(Array.from("dEBAJYOTI"))//make string to an array also object to array by from()
+// // /[
+//   'd', 'E', 'B',
+//   'A', 'J', 'Y',
+//   'O', 'T', 'I']
+//<<<<<<<<<<<<< Important >>>>>>>>>>>>>>>>>>>>>>>>>
+console.log(Array.from({name:"dEBAJYOti"}))//object is passed in the from()
+//returns [] empty array bcz it confuse to make the array of keys or values
+
+console.log(Array.from([1, 2, 3], (x) => x + x));
+// Expected output: Array [2, 4, 6]
+let m1 = 12;
+let m2 = 13;
+let m3 = 122;
+console.log(Array.of(m1,m2,m3))
+
+
+
+
+
 
 
