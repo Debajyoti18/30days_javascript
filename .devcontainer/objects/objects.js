@@ -54,8 +54,8 @@ pens.greeting = function(){
     console.log(`Hello ji, ur pen is ${this.name}`);
 }
 console.log(pens.greeting)//[Function (anonymous)]
-//Function not executed but the reference is came as above op
-console.log(pens.greeting())//print hello ji 
+//Function not executed but the **reference** is came as above op
+console.log(pens.greeting())// here **function** execute print hello ji 
 
 
 
