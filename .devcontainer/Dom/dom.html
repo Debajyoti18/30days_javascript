@@ -6,8 +6,108 @@
     <title>DOM </title>
 </head>
 <body>
-    <h1 class="head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum possimus placeat ea blanditiis veniam nisi nostrum, nulla numquam? Obcaecati, maxime 
-ullam sunt incidunt blanditiis earum porro facere quos expedita!</h1>
+
+    <h1 class="head">Lorem ipsum dolor !</h1>
    <p>ipsum</p>
+  <div class="parent">
+    <ul>
+        <li class="day">monday</li>
+        <li class="day">Tuesday</li>
+        <li class="day">Wednessday</li>
+        <li class="day">Thursday</li>
+    </ul>
+  </div>
 </body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    for(let i=0;i<parent.children.length;i++){
+        // console.log(parent.children[i].innerHTML);
+        
+    }
+// console.log(parent.firstElementChild);
+// console.log(parent.lastElementChild);
+    const d = document.querySelector('.day')
+    console.log(d.parentElement);
+    console.log(d.nextElementSibling)
+
+    console.log(parent.childNodes);//gives the NodeList
+
+//  A NodeList is a collection of DOM nodes (elements) that's returned by methods like document.querySelectorAll() or document.getElementsByClassName(). Here are the key things to know:
+// javascriptCopy
+// // Getting a NodeList
+// const nodes = document.querySelectorAll('.my-class');  // Returns NodeList
+// const divs = document.getElementsByTagName('div');     // Returns HTMLCollection
+// Important characteristics:
+
+// Array-like but not an Array:
+
+// javascriptCopy// Converting to Array
+// const array = Array.from(nodes);
+// // or
+// const array = [...nodes];
+
+// Accessing elements:
+
+// javascriptCopyconst firstNode = nodes[0];
+// const length = nodes.length;
+
+// Iteration methods:
+
+// javascriptCopy// Using forEach
+// nodes.forEach(node => {
+//     console.log(node);
+// });
+
+// // Using for...of
+// for (const node of nodes) {
+//     console.log(node);
+// }
+// Key differences between NodeList and HTMLCollection:
+
+// NodeList is static (except for document.childNodes)
+// querySelectorAll() returns NodeList
+// getElementsBy* methods return HTMLCollection (live collection)
+// NodeList supports forEach, HTMLCollection doesn't
+
+// Common operations:
+// javascriptCopy// Adding class to all elements
+// nodes.forEach(node => node.classList.add('new-class'));
+
+// // Removing elements
+// nodes.forEach(node => node.remove());
+
+// // Checking if element exists
+// const hasElement = nodes.length > 0;
+    
+function createDiv(){
+    const div = document.createElement('div')
+    div.className = "divclass"
+    div.id = Math.round(Math.random*10+1)
+        div.setAttribute("title","dj")
+        div.style.backgroundColor = "red"
+        div.innerText = "Hello I am Dj"
+        // const addtEXT = document.createTextNode(" hello iam dj")
+        // div.appendChild(addtEXT)
+        //adding div to body
+        document.body.append(div)
+}
+    
+for(let i=0;i<5;i++){
+    createDiv();
+}
+
+const div = document.querySelectorAll(".divclass")
+console.log(div);
+// Use querySelector() if you only need to select one element
+// Use querySelectorAll() if you need to select and work with multiple elements
+
+for(let i=0;i<5;i+=2){
+    div[i].style.backgroundColor ='green'
+    div[i].innerText = "I am from Odisha"
+}
+
+    
+</script>
 </html>
