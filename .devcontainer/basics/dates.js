@@ -42,3 +42,27 @@ console.log(date1.toLocaleString('default', {
     weekday: "long",
     day: "numeric"
 })); // Outputs: "Wednesday 31"
+// let date1 = new Date('2024-01-31')
+
+// This creates a new Date object for January 31, 2024
+// The new Date() constructor accepts dates in 'YYYY-MM-DD' format
+
+
+// date1.toLocaleString('default', {...})
+
+// toLocaleString() formats the date according to locale conventions
+// 'default' uses the system's default locale
+// The second parameter is an options object that specifies the format
+
+
+// The options object has two properties:
+
+// weekday: "long" - Shows the full name of the day (e.g., "Wednesday")
+// day: "numeric" - Shows the day of the month as a number (31)
+
+
+
+// So this code will output something like:
+// CopyWednesday, 31
+// This is useful when you want to display just specific parts of a date (in this case, the weekday and day) in a human-readable format
+// . You can customize the output further by adding or removing options like month, year, hour, etc.
