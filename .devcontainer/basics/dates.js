@@ -63,6 +63,6 @@ console.log(date1.toLocaleString('default', {
 
 
 // So this code will output something like:
-// CopyWednesday, 31
+// Wednesday, 31
 // This is useful when you want to display just specific parts of a date (in this case, the weekday and day) in a human-readable format
 // . You can customize the output further by adding or removing options like month, year, hour, etc.
