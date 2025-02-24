@@ -1,4 +1,4 @@
-onst course = {
+const course = {
     coursename: "30_days_js",
     price: 434,
     instructor: "Hitesh Choudhary"
@@ -6,9 +6,9 @@ onst course = {
 
 // Object destructuring is a convenient way to extract properties from objects. Instead of writing:
 
-// javascriptCopyconst instructor = course.instructor
+//  instructor = course.instructor
 // You can use destructuring syntax:
-// javascriptCopyconst {instructor} = course
+// {instructor} = course
 
 // You can also rename variables while destructuring using this syntax:
 
